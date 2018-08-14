@@ -1,0 +1,37 @@
+<html>
+<head>
+	
+	{% load bootstrap3 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static '/css/mytest.css' %}"> 
+	
+	<title>{% block title %}{% endblock %}</title>
+	<!--
+	<link rel="stylesheet" href="{% static '/css/admin.css' %}">
+	<script src="{% static '/js/jquery.min.js' %}"></script>
+	<script src="{% static '/js/amazeui.min.js' %}"></script>
+	<script src="{% static '/js/app.js' %}"></script>
+	-->
+</head>
+
+
+<body>
+	
+		{% block content %}
+		
+		
+		
+		{% endblock %}
+		
+		<div class="container theme-showcase"  role="main">
+			<div class="page-header">
+			</div>
+			<footer class="footer" style="height:10px">
+				<p class="script" > <span>&copy; Company 2018, Ada Wang </span></p>
+			</footer>
+		</div>
+	
+</body>
+</html>

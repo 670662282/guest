@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block title%}
+妖精的尾巴
+{% endblock%}
+{% block content%}
+
+<!-- 导航栏 -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="/event_manage/">Guest Manage System</a>
+		</div>
+		<div id="navbar" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">发布会</a></li>
+				<li><a href="/guest_manage/">嘉宾</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="/my_info/">{{ user }}
+					<b class="caret"></b>
+					</a>
+				</li>
+				<li><a href="/logout/">退出</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container theme-showcase" role="main">
+<!--发布会 搜索表单 -->
+	<div class="page-header" style="margin-top: 80px;">
+		<div id="navbar" class="navbar-collapse collapse" style="float:left;">
+			<form class="navbar-form" method="get" action="/search_name/">
+				<div class="form-group">
+					<input name="name" type="text" placeholder="名称"
+					class="form-control">
+				</div>
+				<button type="submit" class="btn btn-success">搜索</button>
+			</form>
+		</div>
+		<div "float:right;">
+			<button type="submit" class="btn btn-primary " onclick="window.location.href='/add_event/'" style="margin-top: 8px;">添加</button>
+		</div>
+	</div>
+	
+
+<!-- 发布会 -->
+	<div class="row" >
+		<div class="col-md-8 table-responsive" style="width:1000px">
+			<table class="table table-striped table-hover ">
+			<thead>
+				<tr>
+					<th>
+						id <b class="caret"></b>
+					</th>
+					
+					<th>
+						名称 <b class="caret"></b>
+					</th>
+					
+					<th>
+						状态 <b class="caret"></b>
+					</th>
+					<th>
+						地址 <b class="caret"></b>
+					</th>
+					<th>
+						时间 <b class="caret"></b>
+					</th>
+					
+					<th>
+						人数<b class="caret"></b>
+					</th>
+					
+					<th>
+						签到 <b class="caret"></b>
+					</th>
+					
+					<th>
+						签到人数 <b class="caret"></b>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for event in events %}
+				<tr>
+					<td>{{ event.id }}</td>
+					<td>{{ event.name }}</td>
+					<td>{{ event.status }}</td>
+					<td>{{ event.address }}</td>
+					<td>{{ event.start_time }} </td>
+					<td>{{ event.limit }}</td>
+					<td>
+						<a href="/sign_index/{{ event.id }}/" target="{{ event.id }}_blank">
+						sign</a>
+					</td>
+					<td>{{ event.numbers }}人 </td>
+				</tr>
+				{% endfor %}
+				{{ hint }}
+			</tbody>
+			</table>
+			<span> 总计：<strong> {{all_numbers}} </strong>场 </span>
+		</div>
+	</div>
+</div>
+{% endblock %}

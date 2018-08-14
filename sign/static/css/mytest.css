@@ -1,0 +1,152 @@
+/* Ibrahim Jabbari -- www.ibrahimjabbari.com */
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+
+div.guarantee {
+	line-height:		1.9em;
+	font-style:  		italic;
+	font-family:		Georgia, "Time New Roman", Times, serif;
+	color:				#444444; 
+	background-color:	#a7cece; 
+	padding:			25px;
+	padding-right:		80px;
+	margin:				30px;
+	margin-right:		50px;
+	background-image:	url(../images/test.gif);
+	background-repeat:	no-repeat;
+	background-position:right top;
+	border-radius:		15px;
+	border-width:		3px;
+	border-style:		dashed;
+	border-color: 		white;
+	
+} 
+
+div.guaran {
+	line-height:		1.9em;
+	font-style:  		italic;
+	font-family:		Georgia, "Time New Roman", Times, serif;
+	color:				#444444; 
+	background-color:	#a7cece; 
+	padding:			25px;
+	padding-right:		80px;
+	margin:				30px;
+	margin-right:		50px;
+	background-image:	url(../images/test.gif);
+	background-repeat:	no-repeat;
+	background-position:right top;
+	border-radius:		15px;
+	border-width:		3px;
+	border-style:		dashed;
+	border-color: 		white;
+	text-align:			right;
+	
+} 
+h1 {
+	text-shadow:1px 1px #FF0000;
+}
+
+
+.center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+	
+}
+.right {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+
+.myright {
+	margin-top:		5px;
+	margin-right: 	5px;
+	text-align:	right;
+	color:		green;
+}
+.login{
+	background-image:	url(../images/login.jpg);
+	border-radius:		15px;
+	border-width:		3px;
+	border-style:		solid;
+	border-color: 		white;
+}
+.login-laber{
+	color:	white;
+}
+
+.mylogin {
+	background-image:	url(../images/login2.jpg);
+	background-repeat:	no-repeat;
+	background-position: center;
+	border-radius:		15px;
+	border-width:		3px;
+	border-style:		solid;
+	border-color: 		black;
+	padding:			10px;
+}
+
+
+
+.plate {
+  width: 410px;
+  margin: 10% auto;
+}
+.shadow {
+  color: #fff;
+  font-family: Arvo;
+  font-weight: bold;
+  text-shadow:
+    -3px -3px 0 #29aeff,
+    3px -3px 0 #29aeff,
+    -3px 3px 0 #29aeff,
+    3px 3px 0 #29aeff,
+    4px 4px 0 #fff,
+    5px 5px 0 #fff,
+    6px 6px 0 #fff,
+    7px 7px 0 #fff;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  transform: scaleY(0.7);
+  -webkit-transform: scaleY(0.7);
+  -moz-transform: scaleY(0.7);
+  margin:0;
+  text-align: center;
+}
+.script {
+  font-family: "Seaweed Script";
+  color: #29aeff;
+  text-align: left;
+  font-size: 20px;
+  position: relative;
+  margin:0;
+}
+.script span {
+  /* background-color: #222; */
+  padding: 0 0.3em;
+}
+/* :hover */
+.script:before {
+  content:"";
+  display: block;
+  position: absolute;
+  z-index:-1;
+  top: 50%;
+  width: 100%;
+  border-bottom: 3px solid #fff;
+}
+
+.text1 {
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+.text2 {
+  font-size: 169px;
+}
+.text3 {
+  font-size: 100px;
+}

@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- 导航栏 -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="/event_manage/">Guest Manage System</a>
+		</div>
+		<div id="navbar" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="/event_manage/">发布会</a></li>
+				<li><a href="/guest_manage">嘉宾</a><li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">{{ user }}</a></li>
+				<li><a href="/logout/">退出</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div style="margin-top:100px;" class="guarantee">
+  <p><b>注意: </b>使用 margin:auto 无法兼容 IE8, 除非 !DOCTYPE 已经声明。</p>
+</div>
+ <div style="margin-top:100px;" class="guarantee">
+	
+	<strong>
+		<p>1.我讨厌去玩别人的游戏。</p>
+		<p>2.很好，让我来让她看看，看看正牌艾达王的所作所为。</p>
+
+		<p>3.在开枪之前一定要看好周围的环境，好歹看看你对准了什么，开弓哪有回头箭啊？</p>
+
+		<p>4.牺牲自己的手下，你还真做的出来呢。</p>
+
+		<p>5.看来这（自动机枪）对于“团队协作”啥的不是很适用啊~呵呵（QNMLGBD）~</p>
+
+		<p>6.从哪一个先开始呢？尽管跑远，反正我早晚要来~</p>
+
+		<p>7.看样子他们为我准备了欢迎会，然而我却尚未到场</p>
+
+		<p>8.我很不情愿地打断一下，亲，你再能BB也改变不了自己是廉价冒牌货的事实，安心入土为安吧，卡拉。</p>
+
+		<p>9.谢谢好意，可我不是小女孩儿了，自食其力是我所能做到的起码。</p>
+
+		<p>10.我不是你的活体充气娃娃，西蒙斯。</p>
+
+		<p>11.己所欲之，勿从他求。（对被艾达用弩箭手动爆肾的西蒙斯，游戏里给翻译成“你不可能想要什么就有什么的。”这里咸蛋换了个比较文艺的翻译方法- -）</p>
+
+		<p>12.这可不行，我们此时此刻已经超越了人性和同情心的极限了（老娘对你们这对精神病大傻屌的所作所为已经TMD忍无可忍了！）。<p>
+	</strong>
+</div>
+
+
+{% endblock %}

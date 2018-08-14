@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title%}
+adawang Signin page
+{% endblock%}
+
+{% block content%}
+
+
+<div style="padding: 110px" class="login">
+	<div class="container mylogin" style="width:330" >
+		<h2 style="margin-top: 40px" class="form-signin-heading">
+			<p class="shadow text1">AdaWang</p>
+			<!-- <abbr title="Adawang System" >AdaWang</abbr> -->
+		</h2>
+		<form method="post" action="/login_actions/">
+			<label class="login-laber" for="inputUsername" >Username:</label>
+			<input id="inputUsername" class="form-control" name="username" type="text" placeholder="username" required autofocus ><br>
+			<label class="login-laber" for="inputPassword" >Password:</label>
+			<input id="inputPassword" class="form-control" name="password" type="password" placeholder="password" required ><br>
+			<div class="checkbox">
+				<label class="login-laber">
+				  <input type="checkbox"> Remember me
+				</label class="login-laber" >
+			</div>
+			<p style="color:red"> {{ error }} <p><br>
+			<button class="btn btn-lg btn-primary btn-block" type="submit" style="width: 300; margin-bottom:50px" >Sign in</button>
+			{% csrf_token %}
+
+		</form>
+	</div>
+</div>
+
+
+		
+
+{% endblock %}
