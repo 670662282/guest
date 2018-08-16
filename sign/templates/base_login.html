@@ -1,0 +1,27 @@
+<html>
+<head>
+
+	{% load bootstrap3 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static '/css/mytest.css' %}">
+
+	<title>{% block title %}{% endblock %}</title>
+	<!--
+	<link rel="stylesheet" href="{% static '/css/admin.css' %}">
+	<script src="{% static '/js/jquery.min.js' %}"></script>
+	<script src="{% static '/js/amazeui.min.js' %}"></script>
+	<script src="{% static '/js/app.js' %}"></script>
+	-->
+</head>
+
+
+<body class="base_login">
+		{% block content %}
+
+
+
+		{% endblock %}
+</body>
+</html>
