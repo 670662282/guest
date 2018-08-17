@@ -2,12 +2,35 @@
 @import url(https://fonts.googleapis.com/css?family=Arvo:700);
 @import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
 
+
+
+body.base_login{
+    font-family: "HelveticaNeue","LucidaGrande","SegoeUI",Arial, Helvetica, Verdana, sans-serif;
+    color: #696969;
+    background-color:rgb(151, 223, 185);
+		background-image:url(../images/login.jpg);
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+		-moz-background-size:100%
+    margin:0 auto;
+    padding:0;
+    height: 100%;
+}
+
+html {
+    margin:0 auto;
+    padding:0;
+    height: 100%;
+}
+
+
+
 div.guarantee {
 	line-height:		1.9em;
 	font-style:  		italic;
 	font-family:		Georgia, "Time New Roman", Times, serif;
-	color:				#444444; 
-	background-color:	#a7cece; 
+	color:				#444444;
+	background-color:	#a7cece;
 	padding:			25px;
 	padding-right:		80px;
 	margin:				30px;
@@ -19,15 +42,15 @@ div.guarantee {
 	border-width:		3px;
 	border-style:		dashed;
 	border-color: 		white;
-	
-} 
+
+}
 
 div.guaran {
 	line-height:		1.9em;
 	font-style:  		italic;
 	font-family:		Georgia, "Time New Roman", Times, serif;
-	color:				#444444; 
-	background-color:	#a7cece; 
+	color:				#444444;
+	background-color:	#a7cece;
 	padding:			25px;
 	padding-right:		80px;
 	margin:				30px;
@@ -40,8 +63,8 @@ div.guaran {
 	border-style:		dashed;
 	border-color: 		white;
 	text-align:			right;
-	
-} 
+
+}
 h1 {
 	text-shadow:1px 1px #FF0000;
 }
@@ -52,7 +75,7 @@ h1 {
     width: 60%;
     border: 3px solid #73AD21;
     padding: 10px;
-	
+
 }
 .right {
     position: absolute;
@@ -68,13 +91,7 @@ h1 {
 	text-align:	right;
 	color:		green;
 }
-.login{
-	background-image:	url(../images/login.jpg);
-	border-radius:		15px;
-	border-width:		3px;
-	border-style:		solid;
-	border-color: 		white;
-}
+
 .login-laber{
 	color:	white;
 }
